@@ -44,6 +44,14 @@ export default {
     bnb: {
       url: `https://bsc-dataseed.binance.org/`,
     },
+    bitlayer_testnet: {
+      url: "https://testnet-rpc.bitlayer.org" || "",
+      accounts: process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
+    },
+    bitlayer: {
+      url: "https://rpc.bitlayer.org" || "",
+      accounts: process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
+    }
   },
   etherscan: {
     // Your API key for Etherscan
